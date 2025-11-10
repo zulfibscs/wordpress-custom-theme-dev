@@ -1,0 +1,598 @@
+.top-nav{
+    padding: 15px 0px;
+}
+
+.contact-info{
+    gap: 20px;
+}
+
+.top-nav-icon-wrapper{
+    gap: 5px;
+}
+
+.extra-links{
+    gap: 40px;
+}
+
+.top-nav .extra-links .description:hover, .main-nav-links-wrapper .nav-link:hover{
+    color: var(--primary-color);
+}
+
+.main-nav-logo-links{
+    gap: 40px;
+}
+
+.logo-links-wrapper{
+    gap: 19px;
+}
+
+.main-nav-links-wrapper{
+    gap: 40px;
+}
+
+.nav-link{
+    color: var(--light-grey);
+    font-weight: 500;
+}
+
+.nav-link.active{
+    color: var(--primary-color);
+    position: relative;
+}
+
+.nav-link.active::after{
+    content: '';
+    width: 29px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+}
+
+.top-nav-search-icons{
+    gap: 22px;
+}
+
+.search-input{
+    border: none;
+}
+
+.input-wrapper{
+    padding: 10px;
+    border-radius: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+}
+
+.input-wrapper:focus-within {
+  border-color: rgb(73, 73, 148);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.search-input{
+    width: 308px;
+}
+
+.search-input:focus, .category-selector:focus {
+  outline: none;
+  border-color: none; /* change this color to your brand color */
+  box-shadow: none; /* subtle glow */
+}
+
+.search-input::placeholder {
+  color: var(--light-grey);
+  opacity: 1; /* make sure it's fully visible */
+}
+
+.search-input:focus::placeholder {
+  color: var(--light-grey);
+}
+
+.category-selector{
+    border: none;
+    appearance: none; /* hides native arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: var(--light-grey);
+}
+
+.category-selector-wrapper{
+    width: max-content;
+    cursor: pointer;
+}
+
+.main-nav{
+    padding: 15px 0px;
+    border-block: 1px solid var(--border-color);
+}
+
+.header{
+    margin-top: 43px;
+}
+
+.header-category-row{
+    min-height: 381px;
+    gap: 30px;
+}
+
+
+.beauty-products-card{
+    background: linear-gradient(269.03deg, #F4BE98 -2.75%, #FFE1C2 80.58%);
+}
+
+.advanced-tech-category{
+    background: linear-gradient(278.08deg, #BFC5C5 3.11%, #C1D2C2 46.3%);
+}
+
+
+.header-category-card{
+    border-radius: 15px;
+    padding: 30px 0px 0px 30px;
+    height: -webkit-fill-available;
+    width: 25%;
+    
+}
+.banner-card-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home-decor-card{
+    background-image: url(../images/home-decor-card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -40px 0px;
+    width: 50%;
+}
+
+.grocery-category{
+    background: linear-gradient(270deg, #DBD0C1 0%, #EFE4DC 54.7%);
+}
+
+.header-category-card .banner-heading{
+    padding-right: 30px;
+}
+
+.clothing-category{
+    background: linear-gradient(283.48deg, rgba(137, 160, 180, 0.8) 8.52%, #BBCEDC 94.52%);
+}
+
+.sports-category{
+    background: linear-gradient(270deg, #FFE13E 0%, #FBE87F 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+}   
+
+.header-bottom-row{
+    margin-top: 30px;
+}
+
+.sports-category-text-wrapper{
+    height: -webkit-fill-available;
+}
+
+.sports-category .banner-heading{
+    width: 389px;
+    padding: 0;
+}
+
+.responsive-grocery-card{
+    display: none;
+}
+
+.heading-timer-wrapper{
+    max-width: 350px;
+}
+
+.timer-value{
+    color: #fff;
+    background-color: var(--heading-color);
+    border-radius: 4px;
+    padding: 8px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.timer-element-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.timer-wrapper{
+    gap: 22px;
+    padding: 8px 0px 15px;
+}
+
+.flash-sale-section{
+    gap: 34px;
+}
+
+.carousel-control {
+    box-shadow: 0 4px 14px 1px #00000016;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-left{
+    left: 0;
+    z-index: 9001;
+    transform: translateX(-50%);
+}
+
+.carousel-control-right{
+    right: 0;
+    transform: translateX(50%);
+}
+
+.flash-sale-cards-wrapper{
+    position: relative;
+}
+
+.stats-section{
+    background: linear-gradient(#000000c6), 
+     url(../images/stats-bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 20px;
+     padding: 92px 44px;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stats-section .section-heading, .stats-section .description , .stats-section .stats-title{
+    color: #fff;
+}
+
+.numbers-wrapper{
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.numbers-wrapper .section-heading{
+    font-weight: 500;
+}
+
+.stats-separator{
+    width: 1px;
+    height: -webkit-fill-available;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #D9D9D9 53%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+}
+
+.stats-section .description{
+    padding: 8px 0px 20px;
+}
+
+.men-cta-section{
+    background: linear-gradient(#00000079), 
+     url(../images/men-cta-bg.png) no-repeat  center/cover;
+     border-radius: 20px;
+     padding: 130px 60px;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.men-cta-section .section-heading, .men-cta-section .description{
+    color: #fff;
+    max-width: 549px;
+}
+
+.men-cta-section .description{
+    padding: 9px 0px 30px;
+}
+
+.men-cta-section .outlined-btn{
+    color: #fff;
+    border-color: #fff ;
+}
+
+.best-selling-section .description{
+    padding: 8px 0px 15px;
+}
+
+.shop-img{
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    height: 374px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.shop-info-wrapper .description{
+    gap: 16px;
+    padding: 7px 0px;
+}
+
+.shops-wrapper{
+    gap: 30px;
+    margin-top: 30px;
+    flex-grow: 1;
+}
+
+.shop-card, .blog-card{
+    width: 100%;
+}
+
+.blog-date{
+        color: var(--primary-color);
+    }
+
+.blog-card .blog-description{
+    display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show before truncating */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  max-width: 100%;
+  color: var(--light-grey);
+}
+
+.blog-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.blogs-wrapper{
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.footer-bg{
+    margin-top: 140px;
+    background-color: var(--heading-color);
+
+}
+
+.social-links-wrapper{
+    gap: 15px;
+}
+
+.footer-text{
+    color: #E8E8E8;
+}
+
+.logo-wrapper .footer-text{
+    padding: 10px 0px 15px;
+    max-width: 414px;
+}
+
+.links-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.links-wrapper .card-heading{
+    color: #fff;
+}
+
+.contact-info{
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.footer-text-content-wrapper{
+    gap: 100px;
+    max-width: 911px;
+    align-items: flex-start;
+}
+
+.footer-content{
+    justify-content: space-between;
+    padding: 60px 15px ;
+}
+
+.copyright-text{
+    padding: 10px;
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 769px) {
+    nav {
+        display: none;
+    }
+
+    .header-category-row{
+        flex-wrap: wrap;
+    }
+
+    .header-category-card{
+        width: calc(50% - 15px);
+    }
+
+    .home-decor-card{
+        width: 100%;
+        background-position: inherit;
+        min-height: 381px;
+    }
+
+    .responsive-grocery-card{
+    display: flex;
+    }
+
+    .desktop-grocery-card{
+        display: none;
+    }
+
+    .sports-category{
+        width: 100%;
+    }
+
+    .product-cards-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .product-card{
+        flex-basis: calc(50% - 15px);
+    }
+
+    .flash-sale-section{
+        flex-direction: column;
+    }
+
+    .heading-timer-wrapper{
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .heading-timer-wrapper .section-heading{
+        width: 100%;
+    }
+
+    .heading-timer-wrapper .outlined-btn{
+        width: max-content;
+        margin-left: auto;
+        height: max-content;
+    }
+    .timer-wrapper{
+        min-width: 365px;
+    }
+
+    .tablet-hidden-card{
+        display: none;
+    }
+
+    .numbers-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .number-box{
+        width: calc(50% - 1px);
+    }
+
+    .stats-separator:nth-child(4){
+        display: none;
+    }
+
+    .responsive-text-align{
+        text-align: end;
+    }
+
+    .best-selling-section .outlined-btn{
+        margin-left: 0;
+    }
+
+    .shops-wrapper, .blogs-wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: self-start;
+        gap: 30px;
+    }
+
+    .logo-wrapper .footer-text{
+        max-width: 100%;
+    }
+
+
+
+   
+}
+
+@media screen and (max-width: 600px) {
+    .sports-category{
+        flex-direction: column;
+    }
+
+    .sports-category .banner-heading{
+        width: auto;
+    }
+
+    .header-category-card{
+        width: 100%;
+    }
+
+    .home-decor-card{
+        min-height: 450px;
+        background-position: -300px 0px;
+    }
+
+    .product-card{
+        flex-basis: 100%;
+    }
+
+    .product-card .product-img{
+        width: 100%;
+    }
+
+    .heading-timer-wrapper .outlined-btn{
+        width: 100%;
+    }
+
+    .timer-wrapper{
+        min-width:100%;
+    }
+
+    .mobile-hidden-card{
+        display: none;
+    }
+
+    .number-box{
+        width: 100%;
+    }
+
+    .stats-separator{
+        display: none;
+    }
+
+    .responsive-text-align{
+        text-align: start;
+    }
+
+    .numbers-wrapper{
+        gap: 24px;
+    }
+
+    .men-cta-section{
+        padding: 130px 30px;
+        background-position:  center;
+    }
+
+    .footer-text-content-wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .top-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+.main-menu {
+    background-color: #000f3b !important;
+    background: red !important;
+color: #00000079;
+}}
