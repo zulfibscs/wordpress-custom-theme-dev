@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
 </head>
 <body>
     <nav>
@@ -46,15 +47,19 @@
                 </div>
             </div>
         </div>
+        <?php $logoimag=get_header_image(); ?>
         <div class="main-nav">
             <div class="container flex-justify-between">
                 <div class="main-nav-logo-links flex">
-                <img src="<?php echo get_template_directory_uri()?>/images/econex-logo.png" alt="econex-logo">
+                    
+                    
+                <img src="<?php echo $logoimag; ?>" alt="Econex Logo" class="main-logo">
                 <div class="logo-links-wrapper flex">
                     
             <?php
             wp_nav_menu( array(
-             'theme_location' => 'primary-menu'
+             'theme_location' => 'primary-menu',
+                'menu_class'     => 'nav',
                 ) );
                 ?>
                    
@@ -94,64 +99,4 @@
             </div>
         </div>
     </nav>
-    <header class="container header">
-        <div class="header-category-row flex">
-            <div class="header-category-card home-decor-card">
-                <h2 class="banner-heading">
-                    Upgrade Your Home with <br> Trendy Decor at 25% Off
-                </h2>
-                <p class="banner-description">
-                    100+ Collections for your outfit inspirations in this summer
-                </p>
-                <button class="btn primary-btn">
-                    View Collections
-                </button>
-            </div>
-            <div class="header-category-card beauty-products-card banner-card-flex">
-                <h2 class="banner-heading">
-                    Enhance Beauty, Elevate Health
-                </h2>
-                <img src="<?php echo get_template_directory_uri()?>/images/beauty-products-image.png" alt="beauty-products-image">
-            </div>
-             <div class="header-category-card advanced-tech-category banner-card-flex">
-                <h2 class="banner-heading">
-                    Upgrade Life with Advanced Tech
-                </h2>
-                <img src="<?php echo get_template_directory_uri()?>/images/watches-img.png" alt="watches-img">
-            </div>
-        </div>
-        <div class="header-category-row header-bottom-row flex">
-            <div class="header-category-card grocery-category banner-card-flex desktop-grocery-card">
-                <h2 class="banner-heading">
-                    Quality Groceries for Every Meal
-                </h2>
-                <img src="<?php echo get_template_directory_uri()?>/images/grocery-img.png" alt="grocery-category">
-            </div>
-            <div class="header-category-card sports-category">
-                <div class="sports-category-text-wrapper">
-                    <h2 class="banner-heading">
-                    Outfit Your Adventure: Sports & Outdoors
-                </h2>
-                <p class="banner-description">
-                    100+ Collections for your outfit inspirations in this summer
-                </p>
-                <button class="btn primary-btn">
-                    View Collections
-                </button>
-                </div>
-                <img src="<?php echo get_template_directory_uri()?>/images/sports-category.png" alt="sports-category">
-            </div>
-            <div class="header-category-card clothing-category banner-card-flex">
-                <h2 class="banner-heading">
-                    Where Fashion Meets Personality
-                </h2>
-                <img src="<?php echo get_template_directory_uri()?>/images/clothing-category.png" alt="clothing-category">
-            </div>
-            <div class="header-category-card grocery-category banner-card-flex responsive-grocery-card">
-                <h2 class="banner-heading">
-                    Quality Groceries for Every Meal
-                </h2>
-                <img src="<?php echo get_template_directory_uri()?>/images/grocery-img.png" alt="grocery-category">
-            </div>
-        </div>
-    </header>
+    
